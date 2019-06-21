@@ -1,0 +1,4 @@
+writetable(struct2table(out), 'GLCM_Features3.txt')
+
+data = importdata('matlabread.txt');
+csvwrite('test1.csv',data.data);
