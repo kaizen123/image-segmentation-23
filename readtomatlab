@@ -1,0 +1,9 @@
+im=imread('b1.png');
+coOcMat = rgb2gray(im);
+ mi = mean(I(:));
+ v=var(coOcMat(:));
+ k=std(coOcMat(:));
+ l=entropy(coOcMat);
+glcm = graycomatrix(coOcMat,'Offset',[5 0]);
+stats = graycoprops(glcm,{'contrast','homogeneity','correlation','energy'})
+out = GLCM_Features1(glcm,0);
